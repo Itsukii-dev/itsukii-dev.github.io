@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
+  <!-- Colours are literal: a Jekyll layout cannot import src/ui/theme; keep in step with its text/background/link values. -->
+  <style>
+    body { font: 20px/1.6 system-ui, sans-serif; max-width: 42rem; margin: 0 auto; padding: 1rem; color: #1b1b1b; background: #fff; }
+    a { color: #0b4f8a; }
+    @media (prefers-color-scheme: dark) { body { color: #eee; background: #111; } a { color: #8cc4ff; } }
+  </style>
+</head>
+<body>
+{{ content }}
+</body>
+</html>
